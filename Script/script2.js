@@ -1,5 +1,6 @@
 let url = 'https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1'
-const Carta = document.getElementById(card)
+const btn = document.getElementById('btn')
+
 
 function Play_Cards(){
     fetch(url)
@@ -10,13 +11,13 @@ function Play_Cards(){
         fetch(Deck_Id)
         .then(res => res.json())
         .then (cards =>{
-            Carta.innerHTML=`
-            <img src=${cards.cards.images}>
-            `
-        })
-    });
-    
+            cards.forEach(bucle => {
+                document.getElementById('carta').innerHTML=`
+                <img id="photo_card" src="${bucle.cards[0].images.png}">
+                `
 
-    
+            });
+        })
+    }); 
 };
 Play_Cards()
