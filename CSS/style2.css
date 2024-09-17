@@ -4,15 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    overflow: hidden;
+    background-color: gray;
 }
-body img{
-    width: 100vw;
-    height: 100vh;
-}
-#photo_card{
-    width: 10em;
-    height: 20vh;
-    position: absolute;
-    top: 0;
+img{
+    transform: scale(0.8);
 }
