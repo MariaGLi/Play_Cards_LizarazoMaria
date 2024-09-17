@@ -9,3 +9,6 @@ body{
 img{
     transform: scale(0.8);
 }
+.Seleccionar{
+    cursor: pointer;
+}
