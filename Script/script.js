@@ -1,3 +1,3 @@
 btn.addEventListener('click', (e)=>{
-    location.replace('index2.html')    
+    location.replace('../Html/index2.html')    
 })
